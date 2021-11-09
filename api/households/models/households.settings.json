@@ -1,0 +1,44 @@
+{
+  "kind": "collectionType",
+  "collectionName": "households",
+  "info": {
+    "name": "households",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "price": {
+      "type": "decimal"
+    },
+    "bedrooms": {
+      "type": "string"
+    },
+    "toilets": {
+      "type": "string"
+    },
+    "squareMeters": {
+      "type": "decimal"
+    },
+    "images": {
+      "collection": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {}
+    },
+    "location": {
+      "via": "household",
+      "model": "location"
+    }
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "kind": "collectionType",
+  "collectionName": "coordinates",
+  "info": {
+    "name": "Coordinates",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "altitude": {
+      "type": "float"
+    },
+    "latitude": {
+      "type": "float"
+    },
+    "location": {
+      "via": "coordinate",
+      "model": "location"
+    }
+  }
+}

@@ -1,0 +1,40 @@
+{
+  "kind": "collectionType",
+  "collectionName": "locations",
+  "info": {
+    "name": "Location",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "household": {
+      "model": "households",
+      "via": "location"
+    },
+    "street": {
+      "type": "string"
+    },
+    "number": {
+      "type": "integer"
+    },
+    "floor": {
+      "type": "integer"
+    },
+    "letter": {
+      "type": "string"
+    },
+    "coordinate": {
+      "via": "location",
+      "model": "coordinates"
+    },
+    "place": {
+      "model": "places",
+      "via": "locations"
+    }
+  }
+}
