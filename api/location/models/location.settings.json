@@ -12,10 +12,6 @@
   },
   "pluginOptions": {},
   "attributes": {
-    "household": {
-      "model": "households",
-      "via": "location"
-    },
     "street": {
       "type": "string"
     },
@@ -33,8 +29,8 @@
       "model": "coordinates"
     },
     "place": {
-      "model": "places",
-      "via": "locations"
+      "via": "locations",
+      "model": "places"
     }
   }
 }

@@ -2,7 +2,7 @@
   "kind": "collectionType",
   "collectionName": "households",
   "info": {
-    "name": "households",
+    "name": "Households",
     "description": ""
   },
   "options": {
@@ -15,30 +15,22 @@
     "price": {
       "type": "decimal"
     },
-    "bedrooms": {
-      "type": "string"
-    },
-    "toilets": {
-      "type": "string"
-    },
-    "squareMeters": {
-      "type": "decimal"
-    },
-    "images": {
-      "collection": "file",
-      "via": "related",
-      "allowedTypes": [
-        "images",
-        "files",
-        "videos"
-      ],
-      "plugin": "upload",
-      "required": false,
-      "pluginOptions": {}
+    "guests": {
+      "type": "integer"
     },
     "location": {
-      "via": "household",
       "model": "location"
+    },
+    "toilets": {
+      "type": "integer"
+    },
+    "bedrooms": {
+      "type": "integer"
+    },
+    "user": {
+      "via": "households",
+      "plugin": "users-permissions",
+      "model": "user"
     }
   }
 }

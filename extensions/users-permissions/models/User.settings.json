@@ -61,6 +61,21 @@
     },
     "telephone": {
       "type": "integer"
+    },
+    "name": {
+      "type": "string",
+      "required": false
+    },
+    "surname": {
+      "type": "string",
+      "required": false
+    },
+    "households": {
+      "via": "user",
+      "collection": "households"
+    },
+    "avatar": {
+      "type": "string"
     }
   }
 }
