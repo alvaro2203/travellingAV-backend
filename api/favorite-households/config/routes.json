@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/favorite-households",
+      "handler": "favorite-households.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/favorite-households/count",
+      "handler": "favorite-households.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/favorite-households/:id",
+      "handler": "favorite-households.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/favorite-households",
+      "handler": "favorite-households.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/favorite-households/:id",
+      "handler": "favorite-households.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/favorite-households/:id",
+      "handler": "favorite-households.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

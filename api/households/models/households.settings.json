@@ -31,6 +31,18 @@
       "via": "households",
       "plugin": "users-permissions",
       "model": "user"
+    },
+    "description": {
+      "type": "text"
+    },
+    "image1": {
+      "type": "string"
+    },
+    "image2": {
+      "type": "string"
+    },
+    "image3": {
+      "type": "string"
     }
   }
 }

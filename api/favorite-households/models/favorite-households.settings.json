@@ -1,0 +1,23 @@
+{
+  "kind": "collectionType",
+  "collectionName": "favorite_households",
+  "info": {
+    "name": "FavoriteHouseholds",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "user": {
+      "plugin": "users-permissions",
+      "model": "user"
+    },
+    "household": {
+      "model": "households"
+    }
+  }
+}

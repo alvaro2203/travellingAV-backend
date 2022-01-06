@@ -31,6 +31,9 @@
     "place": {
       "via": "locations",
       "model": "places"
+    },
+    "city": {
+      "type": "string"
     }
   }
 }
