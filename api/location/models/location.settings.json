@@ -24,10 +24,6 @@
     "letter": {
       "type": "string"
     },
-    "coordinate": {
-      "via": "location",
-      "model": "coordinates"
-    },
     "place": {
       "via": "locations",
       "model": "places"
