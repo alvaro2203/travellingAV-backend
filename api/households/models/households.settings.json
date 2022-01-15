@@ -43,6 +43,18 @@
     },
     "image3": {
       "type": "string"
+    },
+    "wifi": {
+      "type": "boolean"
+    },
+    "pets": {
+      "type": "boolean"
+    },
+    "garage": {
+      "type": "boolean"
+    },
+    "date": {
+      "type": "string"
     }
   }
 }
